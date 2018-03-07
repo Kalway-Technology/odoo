@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from openerp import fields, models, api, _
+from openerp.exceptions import ValidationError, UserError
 from datetime import timedelta
 
 
@@ -54,19 +55,23 @@ Best Regards,''')
         self = self[0]
         last_month = self.fiscalyear_last_month
         last_day = self.fiscalyear_last_day
-        if (date.month < last_month or (date.month == last_month and date.date <= last_day)):
+        if (date.month < last_month or (date.month == last_month and date.day <= last_day)):
             date = date.replace(month=last_month, day=last_day)
         else:
-            date = date.replace(month=last_month, day=last_day, year=date.year + 1)
+            if last_month == 2 and last_day == 29 and (date.year + 1) % 4 != 0:
+                date = date.replace(month=last_month, day=28, year=date.year + 1)
+            else:
+                date = date.replace(month=last_month, day=last_day, year=date.year + 1)
         date_to = date
         date_from = date + timedelta(days=1)
-        date_from = date_from.replace(year=date_from.year - 1)
+        if date_from.month == 2 and date_from.day == 29:
+            date_from = date_from.replace(day=28, year=date_from.year - 1)
+        else:
+            date_from = date_from.replace(year=date_from.year - 1)
         return {'date_from': date_from, 'date_to': date_to}
 
     def get_new_account_code(self, current_code, old_prefix, new_prefix, digits):
-        new_prefix_length = len(new_prefix)
-        number = current_code[len(old_prefix):]
-        return new_prefix + '0' * (digits - new_prefix_length - len(number)) + number
+        return new_prefix + current_code.replace(old_prefix, '', 1).lstrip('0').rjust(digits-len(new_prefix), '0')
 
     def reflect_code_prefix_change(self, old_code, new_code, digits):
         accounts = self.env['account.account'].search([('code', 'like', old_code), ('internal_type', '=', 'liquidity'),
@@ -75,8 +80,26 @@ Best Regards,''')
             if account.code.startswith(old_code):
                 account.write({'code': self.get_new_account_code(account.code, old_code, new_code, digits)})
 
+    def reflect_code_digits_change(self, digits):
+        accounts = self.env['account.account'].search([('company_id', '=', self.id)], order='code asc')
+        for account in accounts:
+            account.write({'code': account.code.rstrip('0').ljust(digits, '0')})
+
+    @api.multi
+    def _validate_fiscalyear_lock(self, values):
+        if values.get('fiscalyear_lock_date'):
+            nb_draft_entries = self.env['account.move'].search([
+                ('company_id', 'in', [c.id for c in self]),
+                ('state', '=', 'draft'),
+                ('date', '<=', values['fiscalyear_lock_date'])])
+            if nb_draft_entries:
+                raise ValidationError(_('There are still unposted entries in the period you want to lock. You should either post or delete them.'))
+
     @api.multi
     def write(self, values):
+        #restrict the closing of FY if there are still unposted entries
+        self._validate_fiscalyear_lock(values)
+
         # Reflect the change on accounts
         for company in self:
             digits = values.get('accounts_code_digits') or company.accounts_code_digits
@@ -86,4 +109,12 @@ Best Regards,''')
             if values.get('cash_account_code_prefix') or values.get('accounts_code_digits'):
                 new_cash_code = values.get('cash_account_code_prefix') or company.cash_account_code_prefix
                 company.reflect_code_prefix_change(company.cash_account_code_prefix, new_cash_code, digits)
+            if values.get('accounts_code_digits'):
+                company.reflect_code_digits_change(digits)
+
+            #forbid the change of currency_id if there are already some accounting entries existing
+            if 'currency_id' in values and values['currency_id'] != company.currency_id.id:
+                if self.env['account.move.line'].search([('company_id', '=', company.id)]):
+                    raise UserError(_('You cannot change the currency of the company since some journal items already exist'))
+
         return super(ResCompany, self).write(values)

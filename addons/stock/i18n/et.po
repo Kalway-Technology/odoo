@@ -3,13 +3,15 @@
 # * stock
 # 
 # Translators:
+# Arma Gedonsky <armagedonsky@hot.ee>, 2016
+# Rivo Zängov <eraser@eraser.ee>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo 9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-05 14:22+0000\n"
-"PO-Revision-Date: 2015-11-06 08:54+0000\n"
-"Last-Translator: Martin Trigaux\n"
+"POT-Creation-Date: 2016-01-13 09:40+0000\n"
+"PO-Revision-Date: 2018-02-28 14:00+0000\n"
+"Last-Translator: Eneli Õigus <enelioigus@gmail.com>\n"
 "Language-Team: Estonian (http://www.transifex.com/odoo/odoo-9/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +67,7 @@ msgstr ""
 #: code:addons/stock/product.py:209 code:addons/stock/product.py:382
 #, python-format
 msgid " On Hand"
-msgstr ""
+msgstr "Käes"
 
 #. module: stock
 #: code:addons/stock/stock.py:3619 code:addons/stock/stock.py:3912
@@ -100,7 +102,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_move_picking_form
 msgid "#Products"
-msgstr ""
+msgstr "#Tooted"
 
 #. module: stock
 #: code:addons/stock/stock.py:2739
@@ -154,12 +156,12 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid ", if accounting or purchase is installed"
-msgstr ""
+msgstr "kui raamatupidamine või ostmine on paigaldatud"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "- The Odoo Team"
-msgstr ""
+msgstr "- Odoo tiim"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -215,7 +217,7 @@ msgstr ""
 msgid ""
 "<span class=\"label label-default text-center odoo_purple\">Validate the "
 "Delivery</span>"
-msgstr ""
+msgstr "<span class=\"label label-default text-center odoo_purple\">Kinnita tarne</span>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -228,7 +230,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:stock.product_form_view_procurement_button
 #: model:ir.ui.view,arch_db:stock.product_template_form_view_procurement_button
 msgid "<span class=\"o_stat_text\">Forecasted</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">Prognoositud</span>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.product_form_view_procurement_button
@@ -337,12 +339,12 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 msgid "<span>New</span>"
-msgstr ""
+msgstr "<span>Uus</span>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 msgid "<span>View</span>"
-msgstr ""
+msgstr "<span>Vaata</span>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -404,7 +406,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.report_picking
 msgid "<strong>Commitment Date</strong>"
-msgstr ""
+msgstr "<strong>Täitmise tähtaeg</strong>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -521,7 +523,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:stock.report_inventory
 #: model:ir.ui.view,arch_db:stock.report_picking
 msgid "<strong>Product</strong>"
-msgstr ""
+msgstr "<strong>Toode</strong>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.report_inventory
@@ -533,7 +535,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:stock.report_inventory
 #: model:ir.ui.view,arch_db:stock.report_picking
 msgid "<strong>Quantity</strong>"
-msgstr ""
+msgstr "<strong>Kogus</strong>"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.report_delivery_document
@@ -636,7 +638,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_picking_message_needaction
 #: model:ir.model.fields,field_description:stock.field_stock_production_lot_message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Vajalik toiming"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_report_stock_lines_date_active
@@ -657,7 +659,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_picking_form
 msgid "Add an internal note..."
-msgstr ""
+msgstr "Lisa sisemine teade"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_picking_form
@@ -794,7 +796,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location_route_warehouse_selectable
 msgid "Applicable on Warehouse"
-msgstr ""
+msgstr "Rakendatav laos"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_procurement_rule_form_stock_inherit
@@ -847,7 +849,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_string_availability_info
 msgid "Availability"
-msgstr ""
+msgstr "Saadavus"
 
 #. module: stock
 #: selection:stock.move,state:0 selection:stock.pack.operation,state:0
@@ -928,7 +930,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_config_settings_module_stock_barcode
 msgid "Barcode scanner support"
-msgstr ""
+msgstr "Ribakoodi skanneri tugi"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -1152,7 +1154,7 @@ msgstr ""
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_move_form2
 msgid "Click to create a stock movement."
-msgstr ""
+msgstr "Vajuta, et luua lao liikumine."
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_picking_tree
@@ -1192,7 +1194,7 @@ msgstr "Kood"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type_color
 msgid "Color"
-msgstr ""
+msgstr "Värv"
 
 #. module: stock
 #: model:ir.model,name:stock.model_res_company
@@ -1261,7 +1263,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Congratulations!"
-msgstr ""
+msgstr "Õnnitlused!"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.report_stock_lines_date_search
@@ -1290,6 +1292,14 @@ msgid "Corridor (X)"
 msgstr "Koridor (X)"
 
 #. module: stock
+#: code:addons/stock/wizard/stock_immediate_transfer.py:31
+#, python-format
+msgid ""
+"Could not reserve all requested products. Please use the 'Mark as Todo' "
+"button to handle the reservation manually."
+msgstr ""
+
+#. module: stock
 #: model:ir.ui.view,arch_db:stock.view_backorder_confirmation
 msgid "Create Backorder"
 msgstr ""
@@ -1313,7 +1323,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Create Vendors"
-msgstr ""
+msgstr "Loo tarnijaid"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -1341,7 +1351,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Create your products"
-msgstr ""
+msgstr "Loo tooted"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_inventory_move_ids
@@ -1424,7 +1434,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_move_search
 msgid "Creation"
-msgstr ""
+msgstr "Loomine"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_create_date
@@ -1521,7 +1531,7 @@ msgstr ""
 #: model:ir.ui.menu,name:stock.stock_picking_type_menu
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Dashboard"
-msgstr ""
+msgstr "Töölaud"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_report_stock_forecast_date
@@ -1534,7 +1544,7 @@ msgstr "Kuupäev"
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.stock_move_tree
 msgid "Date Expected"
-msgstr ""
+msgstr "Eeldatav kuupäev"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_date_done
@@ -1634,7 +1644,7 @@ msgstr ""
 #. module: stock
 #: selection:stock.move,procure_method:0
 msgid "Default: Take From Stock"
-msgstr ""
+msgstr "Vaikimisi: võta laost"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_route_ids
@@ -1777,7 +1787,7 @@ msgstr "Sihtkoht"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_partner_id
 msgid "Destination Address "
-msgstr ""
+msgstr "Sihtkoha aadress"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location_path_location_dest_id
@@ -1865,7 +1875,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_display_name
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint_display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Näidatav nimi"
 
 #. module: stock
 #: model:ir.actions.act_window,help:stock.action_stock_line_date
@@ -1935,7 +1945,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Download the"
-msgstr ""
+msgstr "Lae alla"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_picking_internal_search
@@ -1962,7 +1972,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "End"
-msgstr ""
+msgstr "Lõpp"
 
 #. module: stock
 #: model:stock.location,name:stock.stock_location_7
@@ -1988,7 +1998,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Excel template"
-msgstr ""
+msgstr "Excel'i mall"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.product_template_search_form_view_stock
@@ -2065,7 +2075,7 @@ msgstr ""
 msgid ""
 "For the Odoo Team,<br/>\n"
 "                            Fabien Pinckaers, Founder"
-msgstr ""
+msgstr "Odoo meeskonnale,<br/>\n                            Fabien Pinckaers, Asutaja"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_picking_form
@@ -2080,7 +2090,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product_virtual_available
 msgid "Forecast Quantity"
-msgstr ""
+msgstr "Ennustatud kogus"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_product_virtual_available
@@ -2205,7 +2215,7 @@ msgstr "Rühmitamine"
 #: model:ir.ui.view,arch_db:stock.quant_package_search_view
 #: model:ir.ui.view,arch_db:stock.quant_search_view
 msgid "Group by..."
-msgstr ""
+msgstr "Rühmita ..."
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_procurement_form_stock_inherit
@@ -2353,7 +2363,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant_name
 msgid "Identifier"
-msgstr ""
+msgstr "Tunnus"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_inventory_form
@@ -2366,13 +2376,13 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking_message_unread
 #: model:ir.model.fields,help:stock.field_stock_production_lot_message_unread
 msgid "If checked new messages require your attention."
-msgstr ""
+msgstr "Kui kontrollitud, siis uued sõnumid nõuavad Su tähelepanu."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_message_needaction
 #: model:ir.model.fields,help:stock.field_stock_production_lot_message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Kui kontrollitud, siis uued sõnumid nõuavad Su tähelepanu"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_type_show_entire_packs
@@ -2495,16 +2505,8 @@ msgstr ""
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
-msgid ""
-"If you need help, do not hesitate to contact our experts\n"
-"                        using the <span class=\"fa fa-question-circle\"/> button on\n"
-"                        the top bar."
-msgstr ""
-
-#. module: stock
-#: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "If you want to do it yourself:"
-msgstr ""
+msgstr "Kui soovite ise teha:"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_immediate_transfer
@@ -2794,22 +2796,22 @@ msgstr ""
 #. module: stock
 #: model:ir.model,name:stock.model_stock_location
 msgid "Inventory Locations"
-msgstr ""
+msgstr "Ladude asukohad"
 
 #. module: stock
 #: selection:stock.location,usage:0
 msgid "Inventory Loss"
-msgstr ""
+msgstr "Laokahju"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_inventory_move_ids
 msgid "Inventory Moves."
-msgstr ""
+msgstr "Laoliikumised."
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_inventory_name
 msgid "Inventory Name."
-msgstr ""
+msgstr "Lao nimi"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_inventory_name
@@ -2835,7 +2837,7 @@ msgstr "Inventuuri hindamine"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant_inventory_value
 msgid "Inventory Value"
-msgstr ""
+msgstr "Lao väärtus"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_inventory_form
@@ -2859,7 +2861,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_picking_message_is_follower
 #: model:ir.model.fields,field_description:stock.field_stock_production_lot_message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Jälgija"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location_return_location
@@ -2911,7 +2913,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_picking_message_last_post
 #: model:ir.model.fields,field_description:stock.field_stock_production_lot_message_last_post
 msgid "Last Message Date"
-msgstr ""
+msgstr "Viimase sõnumi kuupäev"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_make_procurement___last_update
@@ -2946,7 +2948,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse___last_update
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint___last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Viimati muudetud"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_make_procurement_write_uid
@@ -2979,7 +2981,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint_write_uid
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Viimati uuendatud"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_make_procurement_write_date
@@ -3012,7 +3014,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint_write_date
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Viimati uuendatud"
 
 #. module: stock
 #: code:addons/stock/stock.py:4730
@@ -3097,6 +3099,7 @@ msgid "Localization"
 msgstr "Lokaliseerimine"
 
 #. module: stock
+#: code:addons/stock/stock.py:4912
 #: model:ir.model.fields,field_description:stock.field_product_product_location_id
 #: model:ir.model.fields,field_description:stock.field_product_template_location_id
 #: model:ir.model.fields,field_description:stock.field_stock_change_product_qty_location_id
@@ -3110,6 +3113,7 @@ msgstr "Lokaliseerimine"
 #: model:ir.ui.view,arch_db:stock.quant_search_view
 #: model:ir.ui.view,arch_db:stock.view_move_search
 #: model:ir.ui.view,arch_db:stock.warehouse_orderpoint_search
+#, python-format
 msgid "Location"
 msgstr "Asukoht"
 
@@ -3168,6 +3172,7 @@ msgid "Logistics"
 msgstr ""
 
 #. module: stock
+#: code:addons/stock/stock.py:4913
 #: model:ir.model.fields,field_description:stock.field_stock_move_restrict_lot_id
 #: model:ir.model.fields,field_description:stock.field_stock_move_scrap_restrict_lot_id
 #: model:ir.model.fields,field_description:stock.field_stock_quant_lot_id
@@ -3176,6 +3181,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:stock.report_lot_barcode
 #: model:ir.ui.view,arch_db:stock.report_package_barcode
 #: model:ir.ui.view,arch_db:stock.report_picking
+#, python-format
 msgid "Lot"
 msgstr "Partii"
 
@@ -3271,7 +3277,7 @@ msgstr ""
 #. module: stock
 #: model:res.groups,name:stock.group_tracking_owner
 msgid "Manage Different Stock Owners"
-msgstr ""
+msgstr "Halda erinevaid lao omanikke"
 
 #. module: stock
 #: model:res.groups,name:stock.group_production_lot
@@ -3360,12 +3366,6 @@ msgid "Messages"
 msgstr "Sõnumid"
 
 #. module: stock
-#: model:ir.model.fields,help:stock.field_stock_picking_message_ids
-#: model:ir.model.fields,help:stock.field_stock_production_lot_message_ids
-msgid "Messages and communication history"
-msgstr ""
-
-#. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_putaway_method
 #: model:ir.model.fields,field_description:stock.field_product_removal_method
 msgid "Method"
@@ -3380,7 +3380,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model,name:stock.model_stock_warehouse_orderpoint
 msgid "Minimum Inventory Rule"
-msgstr ""
+msgstr "Miinimumlao reegel"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_orderpoint_product_min_qty
@@ -3407,7 +3407,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_warehouse_orderpoint_form
 msgid "Misc"
-msgstr ""
+msgstr "Muu"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_picking_form
@@ -3557,7 +3557,7 @@ msgstr "Uus tegelik kogus"
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_form
 msgid "New Transfer"
-msgstr ""
+msgstr "Uus ülekanne"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_pack_operation_fresh_record
@@ -3656,7 +3656,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_picking_message_needaction_counter
 #: model:ir.model.fields,field_description:stock.field_stock_production_lot_message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Toimingute arv"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_procurement_rule_delay
@@ -3679,13 +3679,13 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking_message_needaction_counter
 #: model:ir.model.fields,help:stock.field_stock_production_lot_message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "Tegutsemist nõudvate sõnumite arv"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_message_unread_counter
 #: model:ir.model.fields,help:stock.field_stock_production_lot_message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "Lugemata sõnumite arv"
 
 #. module: stock
 #: code:addons/stock/stock.py:4734
@@ -3732,12 +3732,12 @@ msgstr ""
 #: model:ir.ui.view,arch_db:stock.product_form_view_procurement_button
 #: model:ir.ui.view,arch_db:stock.product_template_form_view_procurement_button
 msgid "On Hand"
-msgstr ""
+msgstr "Laos"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "On Hand / Available Quantities"
-msgstr ""
+msgstr "Laos / saadaolevad kogused"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.product_template_kanban_stock_view
@@ -3774,12 +3774,12 @@ msgstr ""
 #: code:addons/stock/stock.py:2867
 #, python-format
 msgid "One product only"
-msgstr ""
+msgstr "Üks toode ainult"
 
 #. module: stock
 #: model:ir.actions.client,name:stock.action_client_warehouse_menu
 msgid "Open Warehouse Menu"
-msgstr ""
+msgstr "Ava lao menüü"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_operation_link_operation_id
@@ -3876,6 +3876,12 @@ msgid "Original Move"
 msgstr ""
 
 #. module: stock
+#: code:addons/stock/stock.py:576
+#, python-format
+msgid "Otherwise make sure the right stock/owner is set."
+msgstr ""
+
+#. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_out_type_id
 msgid "Out Type"
 msgstr ""
@@ -3954,13 +3960,15 @@ msgid "Pack Type"
 msgstr ""
 
 #. module: stock
+#: code:addons/stock/stock.py:4914
 #: model:ir.model.fields,field_description:stock.field_stock_quant_package_id
 #: model:ir.ui.view,arch_db:stock.quant_package_search_view
 #: model:ir.ui.view,arch_db:stock.quant_search_view
 #: model:ir.ui.view,arch_db:stock.view_quant_package_form
 #: model:ir.ui.view,arch_db:stock.view_quant_package_tree
+#, python-format
 msgid "Package"
-msgstr ""
+msgstr "Pakend"
 
 #. module: stock
 #: model:ir.actions.report.xml,name:stock.action_report_quant_package_barcode_small
@@ -4036,7 +4044,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model,name:stock.model_stock_pack_operation
 msgid "Packing Operation"
-msgstr ""
+msgstr "Pakendamine"
 
 #. module: stock
 #: code:addons/stock/stock.py:3758
@@ -4107,12 +4115,12 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Periodical Tasks"
-msgstr ""
+msgstr "Perioodilised ülesanded"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_inventory_filter
 msgid "Physical Inventories by Month"
-msgstr ""
+msgstr "Füüsilised laos kuude lõikes"
 
 #. module: stock
 #: model:stock.location,name:stock.stock_location_locations
@@ -4252,7 +4260,7 @@ msgstr "Planeeritud kuupäev"
 #. module: stock
 #: model:ir.model,name:stock.model_web_planner
 msgid "Planner"
-msgstr ""
+msgstr "Planeeria"
 
 #. module: stock
 #: code:addons/stock/stock.py:1546
@@ -4368,13 +4376,13 @@ msgstr ""
 #. module: stock
 #: model:ir.model,name:stock.model_procurement_group
 msgid "Procurement Requisition"
-msgstr ""
+msgstr "Ostude kontroll"
 
 #. module: stock
 #: model:ir.model,name:stock.model_procurement_rule
 #: model:ir.model.fields,field_description:stock.field_stock_move_rule_id
 msgid "Procurement Rule"
-msgstr ""
+msgstr "Hankimise reeglid"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.procrules
@@ -4482,7 +4490,7 @@ msgstr "Toote mõõtühik"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_config_settings_group_product_variant
 msgid "Product Variants"
-msgstr ""
+msgstr "Toote variandid"
 
 #. module: stock
 #: model:stock.location,name:stock.location_production
@@ -4572,7 +4580,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_putaway
 msgid "Putaway"
-msgstr ""
+msgstr "Pane ära"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.report_delivery_document
@@ -4594,7 +4602,7 @@ msgstr ""
 #: code:addons/stock/stock.py:3756
 #, python-format
 msgid "Quality Control"
-msgstr ""
+msgstr "Kvaliteedikontroll"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_wh_qc_stock_loc_id
@@ -4818,7 +4826,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_pack_operation_remaining_qty
 msgid "Remaining Qty"
-msgstr ""
+msgstr "Järelejäänud kogus"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_remaining_qty
@@ -4893,7 +4901,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_picking_form
 msgid "Reserve"
-msgstr ""
+msgstr "Reserveeri"
 
 #. module: stock
 #: selection:stock.config.settings,module_procurement_jit:0
@@ -4968,7 +4976,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model,name:stock.model_stock_return_picking
 msgid "Return Picking"
-msgstr ""
+msgstr "Tagastuse noppimine"
 
 #. module: stock
 #: code:addons/stock/wizard/stock_return_picking.py:178
@@ -5024,12 +5032,12 @@ msgstr ""
 #: model:ir.ui.view,arch_db:stock.stock_location_route_tree
 #: model:ir.ui.view,arch_db:stock.view_warehouse
 msgid "Routes"
-msgstr ""
+msgstr "Marsruudid"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Routes Management"
-msgstr ""
+msgstr "Marsruutide haldus"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_resupply_route_ids
@@ -5177,7 +5185,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_inventory_line_prodlot_name
 msgid "Serial Number Name"
-msgstr ""
+msgstr "Seerianumbri nimetus"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_production_lot_form
@@ -5268,7 +5276,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_code
 msgid "Short Name"
-msgstr ""
+msgstr "Lühinimi"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_warehouse_code
@@ -5409,7 +5417,7 @@ msgstr "Laoseisu prognoos"
 #: model:ir.ui.view,arch_db:stock.view_stock_level_forecast_graph
 #: model:ir.ui.view,arch_db:stock.view_stock_level_forecast_pivot
 msgid "Stock Level forecast"
-msgstr ""
+msgstr "Laoseisu prognoos"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_location_form
@@ -5444,13 +5452,13 @@ msgstr "Lao liikumised"
 #: model:ir.ui.view,arch_db:stock.view_move_graph
 #: model:ir.ui.view,arch_db:stock.view_move_pivot
 msgid "Stock Moves Analysis"
-msgstr ""
+msgstr "Laoliikumiste analüüs"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.product_open_quants
 #: model:ir.actions.act_window,name:stock.product_template_open_quants
 msgid "Stock On Hand"
-msgstr ""
+msgstr "Olemasolev ladu"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_picking_tree_all
@@ -5481,6 +5489,12 @@ msgstr ""
 #: model:ir.ui.view,arch_db:stock.report_stock_lines_date_search
 msgid "Stockable"
 msgstr "Ladustatav"
+
+#. module: stock
+#: code:addons/stock/product.py:400
+#, python-format
+msgid "Stockable Product"
+msgstr ""
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location_route_supplied_wh_id
@@ -6004,7 +6018,7 @@ msgstr "Saaja"
 #: model:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 #: model:ir.ui.view,arch_db:stock.view_move_search
 msgid "To Do"
-msgstr ""
+msgstr "Tegemiseks"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.stock_picking_type_kanban
@@ -6094,6 +6108,11 @@ msgstr "Jälgimine"
 #: model:ir.ui.view,arch_db:stock.view_picking_form
 #, python-format
 msgid "Transfer"
+msgstr "Ülekanne"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_move_picking_partner_id
+msgid "Transfer Destination Address"
 msgstr ""
 
 #. module: stock
@@ -6145,14 +6164,20 @@ msgid "USPS integration"
 msgstr ""
 
 #. module: stock
+#: code:addons/stock/stock.py:730
+#, python-format
+msgid "Under no circumstances should you delete or change quants yourselves!"
+msgstr ""
+
+#. module: stock
 #: model:ir.model.fields,help:stock.field_stock_production_lot_name
 msgid "Unique Serial Number"
-msgstr ""
+msgstr "Unikaalne seerianumber"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_quant_cost
 msgid "Unit Cost"
-msgstr ""
+msgstr "Ühiku maksumus"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_move_picking_form
@@ -6198,7 +6223,7 @@ msgstr "Mõõtühikud"
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Units of Measures"
-msgstr ""
+msgstr "Mõõtühikud"
 
 #. module: stock
 #: code:addons/stock/stock.py:4169
@@ -6246,7 +6271,7 @@ msgstr "Lugemata sõnumid"
 #: model:ir.model.fields,field_description:stock.field_stock_picking_message_unread_counter
 #: model:ir.model.fields,field_description:stock.field_stock_production_lot_message_unread_counter
 msgid "Unread Messages Counter"
-msgstr ""
+msgstr "Lugemata sõnumite loendur"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_picking_form
@@ -6274,7 +6299,7 @@ msgstr "Uuenda toote kogust"
 #: model:ir.ui.view,arch_db:stock.product_product_view_form_easy_inherit_stock
 #: model:ir.ui.view,arch_db:stock.product_template_form_view_procurement_button
 msgid "Update Qty On Hand"
-msgstr ""
+msgstr "Uuenda laoseisu"
 
 #. module: stock
 #: selection:stock.move,priority:0 selection:stock.picking,priority:0
@@ -6340,7 +6365,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:stock.view_location_search
 #: model:ir.ui.view,arch_db:stock.view_move_tree_receipt_picking
 msgid "Vendor"
-msgstr ""
+msgstr "Tarnija"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_partner_property_stock_supplier
@@ -6356,7 +6381,7 @@ msgstr ""
 #. module: stock
 #: model:stock.location,name:stock.stock_location_suppliers
 msgid "Vendors"
-msgstr ""
+msgstr "Tarnijad"
 
 #. module: stock
 #: selection:stock.move,priority:0 selection:stock.picking,priority:0
@@ -6445,7 +6470,7 @@ msgstr "Laohaldus"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse_name
 msgid "Warehouse Name"
-msgstr ""
+msgstr "Lao nimi"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_procurement_rule_propagate_warehouse_id
@@ -6517,18 +6542,18 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_picking_website_message_ids
 #: model:ir.model.fields,field_description:stock.field_stock_production_lot_website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Veebilehe sõnumid"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_picking_website_message_ids
 #: model:ir.model.fields,help:stock.field_stock_production_lot_website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Veebilehe suhtluse ajalugu"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Welcome"
-msgstr ""
+msgstr "Tere tulemast"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_location_route_warehouse_selectable
@@ -6804,6 +6829,14 @@ msgid "You should provide a different serial number for each piece"
 msgstr ""
 
 #. module: stock
+#: code:addons/stock/product.py:349
+#, python-format
+msgid ""
+"You still have some active reordering rules on this product. Please archive "
+"or delete them first."
+msgstr ""
+
+#. module: stock
 #: constraint:stock.move:0
 msgid ""
 "You try to move a product using a UoM that is not compatible with the UoM of"
@@ -6813,7 +6846,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
 msgid "Your Products"
-msgstr ""
+msgstr "Teie tooted"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
@@ -6979,7 +7012,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model,name:stock.model_stock_return_picking_line
 msgid "stock.return.picking.line"
-msgstr ""
+msgstr "stock.return.picking.line"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner
